@@ -6,7 +6,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve a simple form that accepts user input
 app.get('/', (req, res) => {
-  res.send(`
+  res.send(`<h1>Hello from FDA, ${username}</h1>`);
     <form method="POST">
       <input name="username" />
       <button type="submit">Submit</button>
